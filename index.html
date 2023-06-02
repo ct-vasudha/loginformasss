@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="app.css" />
+    
+    <title>Create account</title>
+</head>
+<body>
+   
+        <div class="container">
+            <div class="header">
+                <h2>Sign Up</h2>
+            </div>
+            <div class ="form">
+                <div class="form-control">
+                    <label for="username" name="username">  User name</label>
+                    <input  id="txtUserName" type="text" name="username" placeholder="username" onblur="uname()"/> 
+                    <p id="uerror"> </p>
+                </div>
+                <div class="form-control">
+                    <label for="email" name="email">  Email</label>
+                    <input  id="txtemail" type="email" name="email" placeholder="enter email" onblur="mail()"  /> 
+                    <p id="eerror"> </p>
+                </div>
+                <div class="form-control">
+                    <label for="pswd" name="pswd">  Password</label>
+                    <input   id="txtpswd" type="Password" name="pswd" placeholder="enter password" blur="pwdfun()"/> 
+                    <span><i class="far fa-eye" id="togglePassword" onmouseup="show_pswd()" onmousedown="hide_pswd()"></i></span>
+                    <p id="perror"> </p>
+                    
+                </div>
+                <div class="form-control">
+                    <label for="conpswd" name="conpswd"> Confirm Password</label>
+                    <input  id="txtconpswd" type="password" name="conpswd" placeholder="Re-enter password" onblur="conpwdfun()"/> 
+                    <p id="cperror"> </p>
+                    
+                </div>
+                <div class=" form-control">
+                    <button> Signup </button>
+                    
+
+                       
+
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    
+    
+</body>
+
+</html>
